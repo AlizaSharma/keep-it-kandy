@@ -3,6 +3,9 @@ const { ApolloServer } = require('apollo-server-express');
 const mongoose = require('mongoose');
 const connectDB = require('./config/connection');
 // import schema and resolvers here when done. 
+const typeDefs = require('./schemas/typeDefs');
+const resolvers = require('./schemas/resolvers');
+
 
 const app = express();
 
