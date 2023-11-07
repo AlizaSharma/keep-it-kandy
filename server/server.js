@@ -1,27 +1,42 @@
 const express = require('express');
-const { ApolloServer } = require('apollo-server-express');
-const mongoose = require('mongoose');
-const connectDB = require('./config/connection');
-// import schema and resolvers here when done. 
+const { ApolloServer } = require('@apollo/server');
+const { expressMiddleware } = require('@apollo/server/express4');
+const path = require('path');
 
+const { typeDefs, resolvers } = require('./path-to-schemas-here'); // add path to schemas
+const db = require('./config/connection');
+
+const PORT = process.env.PORT || 3001;
 const app = express();
+const server = new ApolloServer({
+  typeDefs, // Define GraphQL schema when it's ready
+  resolvers, // Define resolvers when they're ready
+});
 
-// Creates ApolloServer with type definitions and resolvers
-const server = new ApolloServer({ typeDefs, resolvers });
+const startApolloServer = async () => {
+  await server.start();
 
-// Connect to the MongoDB database
-connectDB()
-  .then(() => {
-    // Applies Apollo Server middleware to the Express app
-    server.applyMiddleware({ app });
+  app.use(express.urlencoded({ extended: true }));
+  app.use(express.json());
 
-    const PORT = process.env.PORT || 3000;
+  app.use('/graphql', expressMiddleware(server));
 
-    app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}${server.graphqlPath}`);
+  // if we're in production, serve client/dist as static assets
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/dist')));
+
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
-  })
-  .catch((error) => {
-    console.error('Error connecting to MongoDB:', error);
+  }
+
+  db.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`API server running on port ${PORT}!`);
+      console.log(`Use GraphQL at http://localhost:${PORT}/graphql`);
+    });
   });
+};
+
+startApolloServer();
 
