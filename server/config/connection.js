@@ -1,17 +1,5 @@
 const mongoose = require('mongoose');
 
-const connectDB = async () => {
-  try {
-    const connection = await mongoose.connect('mongodb://localhost:27017/DATABASE-NAME-HERE', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/UPDATE-NAME-HERE'); // check name here later
 
-    console.log(`MongoDB connected: ${connection.connection.host}`);
-  } catch (error) {
-    console.error(`Error connecting to MongoDB: ${error.message}`);
-    process.exit(1); // Exits the process with an error code
-  }
-};
-
-module.exports = connectDB;
+module.exports = mongoose.connection;
