@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import 'semantic-ui-css/semantic.min.css'
 import './App.css'
+import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import Navbar from './components/navbar.jsx'
-
+import 'bulma/css/bulma.min.css';
 
 function App() {
 
@@ -36,8 +36,3 @@ function App() {
 }
 
 export default App
-import React from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar';
-import 'bulma/css/bulma.min.css';
