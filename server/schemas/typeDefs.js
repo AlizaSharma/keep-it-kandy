@@ -4,6 +4,15 @@ type User {
   username: String!
 }
 
+type Candies {
+  _id: ID!
+  name: String!
+  description: String!
+  image: String
+  price: Float!
+  quantity: Int
+}
+
 type Auth {
   token: String!
   user: User!
@@ -11,11 +20,12 @@ type Auth {
 
 type Query {
   users: [User!]!
+  candies: [Candies!]!
 }
 
 type Mutation {
   createUser(username: String! password: String!): Auth
+  login(username: String! password: String!): Auth
 }`
 
 module.exports = typeDefs;
-// do not define password
