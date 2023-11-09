@@ -1,5 +1,5 @@
 const { User, Candies } = require("../models");
-// const { signToken, AuthenticationError } = require('../utils/auth');
+const { signToken, AuthenticationError } = require('../utils/auth');
 
 module.exports = {
   Query: {
