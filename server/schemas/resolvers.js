@@ -16,4 +16,4 @@ async createUser(parent, { username, password }) {
 
 //mutations and typedefs must match
 
-// read doc about v4. 
+// read docs about Apollo v4. 
