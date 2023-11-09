@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import Navbar from './components/navbar.jsx'
 import 'bulma/css/bulma.min.css';
 function App() {
-
+// hello world
   return (
     <>    
       <div>
