@@ -1,5 +1,5 @@
 const { User, Candies } = require("../models");
-// const { signToken, AuthenticationError } = require('../utils/auth');
+const { signToken, AuthenticationError } = require('../utils/auth');
 
 module.exports = {
   Query: {
@@ -18,11 +18,6 @@ module.exports = {
       return { token, user };
     },
 
-
-//mutations and typedefs must match
-
-// read docs about Apollo v4. 
-=======
     login: async (parent, { username, password }) => {
       const user = await User.findOne({ username });
       if (!user) {
@@ -37,4 +32,8 @@ module.exports = {
     },
   },
 };
+
+//mutations and typedefs must match
+
+// read docs about Apollo v4. 
 
