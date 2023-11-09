@@ -5,12 +5,11 @@ import 'semantic-ui-css/semantic.min.css'
 import './App.css'
 import Navbar from './components/navbar.jsx'
 
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    
+    <>    
       <div>
         <Navbar />
         <a href="https://vitejs.dev" target="_blank">
@@ -37,3 +36,8 @@ function App() {
 }
 
 export default App
+import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar';
+import 'bulma/css/bulma.min.css';
