@@ -10,7 +10,6 @@
   * [Testing](#testing)
   * [Contributors](#contributors)
   * [Questions](#questions)
-  * [GitHub](#github)
   * [License](#license)
 
   ## Description
@@ -31,14 +30,20 @@
 
   ## Contributors
 
-  n/a
+  Click name for GitHub:
+
+  [Aliza Sharma](https://github.com/AlizaSharma)
+
+  [Monica Cordova](https://github.com/cordovamonica)
+
+  [Gerardo Perez](https://github.com/Gera1313)
+
+  [Daisy Olivera Diaz](https://github.com/OliveraDiaz)
+
+  [Ricardo Esparza](https://github.com/Gama0194)
 
   ## Questions
 
-  n/a
-
-  ## GitHub
-  
   n/a
 
   ## License
