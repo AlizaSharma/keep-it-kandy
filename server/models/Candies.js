@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = require('mongoose');
 
 const candiesSchema = new Schema({
+    
     name: {
         type: String,
         required: true,

@@ -18,6 +18,11 @@ module.exports = {
       return { token, user };
     },
 
+
+//mutations and typedefs must match
+
+// read docs about Apollo v4. 
+=======
     login: async (parent, { username, password }) => {
       const user = await User.findOne({ username });
       if (!user) {
