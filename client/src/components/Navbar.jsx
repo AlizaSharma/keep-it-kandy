@@ -1,51 +1,51 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Navbar() {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div id="navbar" className="navbar-menu">
-        <div className="navbar-start">
-          <a className="navbar-item" href="#explore">
-            <span className="icon">
-              <i className="fas fa-user"></i>
-            </span>
-            <span>Explore</span>
-          </a>
-          <a className="navbar-item" href="#candy">
-            <span className="icon">
-              <i className="fas fa-briefcase"></i>
-            </span>
-            <span>Candy</span>
-          </a>
-          <a className="navbar-item" href="#chocolate">
-            <span className="icon">
-              <i className="fas fa-briefcase"></i>
-            </span>
-            <span>Chocolate</span>
-          </a>
-          <a className="navbar-item" href="#create">
-            <span className="icon">
-              <i className="fas fa-envelope"></i>
-            </span>
-            <span>Create Account</span>
-          </a>
-          <a className="navbar-item" href="#logt">
-            <span className="icon">
-              <i className="fas fa-envelope"></i>
-            </span>
-            <span>Log In</span>
-          </a>
-          <a className="navbar-item" href="#contact">
-            <span className="icon">
-              <i className="fas fa-envelope"></i>
-            </span>
-            <span>Contact Us</span>
-          </a>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="./assets/image5.jpg" width="55" height="600" alt=""/>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="#">Explore</a>
+      <a class="navbar-item" href="#">Shop</a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#">Candy</a>
+          <a class="navbar-item" href="#">Chocolate</a>
+          <a class="navbar-item" href="#">Contact Us</a>
         </div>
       </div>
-    </nav>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-info is-light">
+            <strong>Sign In</strong>
+          </a>
+          <a class="button is-light">Log in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+   
   );
 }
 
 export default Navbar;
+
+
+  
