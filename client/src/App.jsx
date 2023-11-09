@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import Navbar from './components/navbar.jsx'
 import 'bulma/css/bulma.min.css';
 
-// GraphQL and Tokens lines 9-38. Tied to auth.js in utils client. Haven't been able to test this.
+// GraphQL and Tokens lines 8-37. Related to auth.js in utils client. Haven't been able to test this.
 import {
   ApolloClient,
   InMemoryCache, // Not sure if an ApolloProvider should go in here or not. 
@@ -51,3 +51,5 @@ function App() {
 }
 
 export default App
+
+// wrap function app() in an ApolloProvider? 
