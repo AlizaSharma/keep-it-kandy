@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Navbar from './components/navbar.jsx'
 import Body from './components/Body'
+import Section from './components/Section'
 import 'bulma/css/bulma.min.css';
 
 
@@ -10,11 +11,10 @@ function App() {
   return (
     <>    
       <div>
-      < Navbar />
+        < Navbar />
         < Header/>
-        <main>
         < Body />
-        </main>
+        < Section />
         < Footer/>
     
       </div>
