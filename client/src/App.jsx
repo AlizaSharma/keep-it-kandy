@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Navbar from './components/navbar.jsx'
+import Navbar from './components/Navbar.jsx'
 import Body from './components/Body'
 import Section from './components/Section'
 import 'bulma/css/bulma.min.css';
