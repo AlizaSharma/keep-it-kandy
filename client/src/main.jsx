@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import Candy from './pages/Candy.jsx'
-import Chocolate from './pages/Chocolate.jsx'
-import Contact from './pages/Contact.jsx'
-import Explore from './pages/Explore.jsx'
+import Login from './pages/Login.jsx';
+import Shop from './pages/Shop.jsx';
+import Contact from './pages/Contact.jsx';
+import Explore from './pages/Explore.jsx';
 
 
 const router = createBrowserRouter([
@@ -15,13 +15,13 @@ const router = createBrowserRouter([
     errorElement: <div>Not found</div>,
   },
   {
-    path: '/candy',
-    element: <Candy />,
+    path: '/login',
+    element: <Login />,
     errorElement: <div>Not found</div>,
   },
   {
-    path: '/chocolate',
-    element: <Chocolate />,
+    path: '/shop',
+    element: <Shop />,
     errorElement: <div>Not found</div>,
   },
   {
