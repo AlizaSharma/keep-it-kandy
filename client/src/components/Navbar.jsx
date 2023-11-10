@@ -7,7 +7,9 @@ function Navbar() {
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item">
-      <img src="./assets/image5.jpg" width="55" height="600" alt=""/>
+    <span class="icon is-large">
+    <i class="fas fa-flag-checkered"></i>
+    </span>
     </a>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -22,8 +24,6 @@ function Navbar() {
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">More</a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="#">Candy</a>
-          <a class="navbar-item" href="#">Chocolate</a>
           <a class="navbar-item" href="#">Contact Us</a>
         </div>
       </div>
