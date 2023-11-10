@@ -31,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/explore',
-    element: <Explore />,
+    element: <App />,
     errorElement: <div>Not found</div>,
   },
 ]);

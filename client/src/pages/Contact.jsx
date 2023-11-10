@@ -1,22 +1,21 @@
-import { useState } from 'react'
-import Navbar from '../components/Navbar.jsx'
+import React from 'react';
+import Navbar from '../components/Navbar.jsx';
+import Header from '../components/Header.jsx';
 
 function Contact() {
-    const [count, setCount] = useState(0)
-
     return (
         <>
-        <div><Navbar />
-        <h1>Store</h1>
-        <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                count is {count}
-                </button>
-                <p>
-                Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
-                </div>
-        </div>
+        < Navbar />
+        < Header />
+        <section class="section">
+        <div class="card">
+        <div class="card-content has-text-centered">
+        <h1 class="title">Contact Us</h1>
+        <p>Email: contact@kandycorp.com</p>
+        <p>Phone: 210-421-4444</p>
+</div>
+</div>
+</section>
         </>
     );
 }
