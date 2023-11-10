@@ -1,7 +1,7 @@
 const { GraphQLError } = require('graphql');
 const jwt = require('jsonwebtoken');
 
-const secret = 'secretkey'; // we can change it to something else
+const secret = 'secretkey'; // we can change it to something else. .env file to store key? 
 const expiration = '2h';
 
 module.exports = {
@@ -31,10 +31,9 @@ module.exports = {
 
     return req;
   },
-  signToken({ firstName, email, _id }) {
-    const payload = { firstName, email, _id };
+  signToken({ username, _id }) {
+    const payload = { username, _id };
 
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },
 };
-
