@@ -19,12 +19,12 @@ function Navbar() {
   </div>
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="#">Explore</a>
-      <a class="navbar-item" href="#">Shop</a>
+      <a class="navbar-item" href="/Explore">Explore</a>
+      <a class="navbar-item" href="/Shop">Shop</a>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">More</a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="#">Contact Us</a>
+          <a class="navbar-item" href="/Contact">Contact Us</a>
         </div>
       </div>
     </div>
