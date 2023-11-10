@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import Navbar from '../components/Navbar.jsx'
 
-function Cart() {
+function Explore() {
     const [count, setCount] = useState(0)
 
     return (
@@ -23,4 +23,4 @@ function Cart() {
 }
 
 
-export default Cart;
+export default Explore;
