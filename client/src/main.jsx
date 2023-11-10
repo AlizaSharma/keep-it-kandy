@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 // import Login from './pages/Login.jsx';
-// import Shop from './pages/Shop.jsx';
+import Shop from './pages/Shop.jsx';
 import Contact from './pages/Contact.jsx';
-import Explore from './pages/Explore.jsx';
 
 
 const router = createBrowserRouter([
@@ -19,11 +18,11 @@ const router = createBrowserRouter([
   //   element: <Login />,
   //   errorElement: <div>Not found</div>,
   // },
-  // {
-  //   path: '/shop',
-  //   element: <Shop />,
-  //   errorElement: <div>Not found</div>,
-  // },
+  {
+    path: '/shop',
+    element: <Shop />,
+    errorElement: <div>Not found</div>,
+  },
   {
     path: '/contact',
     element: <Contact />,
