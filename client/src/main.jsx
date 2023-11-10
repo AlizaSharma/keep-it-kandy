@@ -1,49 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
+import Login from './pages/Login.jsx';
+import Shop from './pages/Shop.jsx';
+import Contact from './pages/Contact.jsx';
+import Explore from './pages/Explore.jsx';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <div>Not found</div>,
+  },
+  {
+    path: '/login',
+    element: <Login />,
+    errorElement: <div>Not found</div>,
+  },
+  {
+    path: '/shop',
+    element: <Shop />,
+    errorElement: <div>Not found</div>,
+  },
+  {
+    path: '/contact',
+    element: <Contact />,
+    errorElement: <div>Not found</div>,
+  },
+  {
+    path: '/explore',
+    element: <Explore />,
+    errorElement: <div>Not found</div>,
+  },
+]);
+
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router} />
 );
-
-
-// import Homepage from './pages/Candy.jsx'
-// import Store from './pages/Contact.jsx'
-// import Signin from './pages/Login.jsx'
-// import Signup from './pages/Chocolate.jsx'
-// import Cart from './pages/Explore.jsx'
-
-// const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <App />,
-//     errorElement: <div>Not found</div>,       
-//   },{
-//     path: '/',
-//     element: <Homepage />,
-//     errorElement: <div>Not found</div>,       
-//   },{
-//     path: '/store',
-//     element: <Store />,
-//     errorElement: <div>Not found</div>,
-//   },{
-//     path: '/signin',
-//     element: <Signin />,
-//     errorElement: <div>Not found</div>,
-//   },{
-//     path: '/signup',
-//     element: <Signup />,
-//     errorElement: <div>Not found</div>,
-//   },{
-//     path: '/cart',
-//     element: <Cart />,
-//     errorElement: <div>Not found</div>,
-//   }
-
-// ]);
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <RouterProvider router={router} />
-// );

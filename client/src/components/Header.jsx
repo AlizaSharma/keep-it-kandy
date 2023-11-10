@@ -1,12 +1,11 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Header = () => {
   return (
-    <section class="hero is-medium is-link has-text-centered">
+    <section class="hero has-text-centered">
     <div class="hero-body">
-      <p class="title">
+      <p class="title is-1">
       KEEP IT KANDY
       </p>
       <p class="subtitle">
