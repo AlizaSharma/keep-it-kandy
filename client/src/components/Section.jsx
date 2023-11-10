@@ -5,19 +5,19 @@ import '../App.css';
 const Section = () => {
     return (
         
-        <div class="card">
+        <div class="card has-text-centered">
         <div class="card-content">
           <p class="title">
-            “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+            “Mouth-watering, flavorful, delicious. Keep it Kandy has the best candy on the block!”
           </p>
           <p class="subtitle">
-            Jeff Atwood
+            Candy Enthusiast 
           </p>
         </div>
         <footer class="card-footer">
           <p class="card-footer-item">
             <span>
-              View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+              Share on <a href="#">Twitter</a>
             </span>
           </p>
           <p class="card-footer-item">
