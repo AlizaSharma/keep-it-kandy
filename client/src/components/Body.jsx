@@ -12,7 +12,7 @@ const Body = () => {
                 <figure class="image is-16by9">
                   <img src="./public/assets/image3.jpg" alt="" />
                   <div class="overlay">
-                    <a href="#" class="button is-info is-light is-large">Shop Now</a>
+                    <a href="/shop" class="button is-info is-light is-large">Shop Now</a>
                   </div>
                 </figure>
               </div>
