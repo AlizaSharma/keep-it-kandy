@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar.jsx'
 
-function Store() {
+function Contact() {
     const [count, setCount] = useState(0)
 
     return (
@@ -22,4 +22,4 @@ function Store() {
 }
 
 
-export default Store;
+export default Contact;
