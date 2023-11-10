@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import Navbar from '../components/navbar.jsx'
+import Navbar from '../components/Navbar.jsx'
 
 function Cart() {
     const [count, setCount] = useState(0)

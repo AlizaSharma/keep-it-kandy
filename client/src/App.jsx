@@ -21,6 +21,5 @@ function App() {
   )
 }
 
-export default App
+export default App;
 
-// wrap function app() in an ApolloProvider? 
