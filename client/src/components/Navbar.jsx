@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import {Link} from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -34,7 +35,10 @@ function Navbar() {
           <a class="button is-info is-light">
             <strong>Sign In</strong>
           </a>
-          <a class="button is-light">Log in</a>
+          <Link
+          to="/login">
+        <button class="button is-light">Log in</button>
+          </Link>
         </div>
       </div>
     </div>
