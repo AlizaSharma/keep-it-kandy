@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item">
+        <a className="navbar-item" href="/">
           <span className="icon is-large">
             <i className="fas fa-flag-checkered"></i>
           </span>

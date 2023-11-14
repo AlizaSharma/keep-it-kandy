@@ -31,6 +31,7 @@ export default function SignUp() {
 
     return (
         <form className="signup-form" onSubmit={handleFormSubmit}>
+          <h1><strong>New user? Create an account.</strong></h1>
               <div className="field">
                 <p className="control has-icons-left has-icons-right">
                   <input
