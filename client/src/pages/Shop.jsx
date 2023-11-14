@@ -1,7 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar.jsx';
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
 import cakebites from '../assets/Cakebites.png';
 import chocolateballs from '../assets/Chocoalteballs.png';
 import donuts from '../assets/donuts.png';
@@ -12,8 +9,6 @@ import mnms from '../assets/Mnms.png';
 function Shop() {
     return (
         <>
-        < Navbar />
-        < Header />
         <section class="section">
         <div class="container">
             <div class="columns is-multiline">
@@ -111,7 +106,6 @@ function Shop() {
         </div>
         </section>
        
-< Footer />
         </>
     );
 }

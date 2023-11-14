@@ -1,5 +1,4 @@
-// decoding the token to get the user's information 
-import decode from 'jwt-decode';
+import jwt_decode from 'jwt-decode';
 
 class AuthService {
   // get user data from JSON web token by decoding it
@@ -11,6 +10,19 @@ class AuthService {
   loggedIn() {
     const token = this.getToken();
     return token ? true : false;
+  }
+  isTokenExpired(token) {
+    try {
+      const decoded = decode(token);
+      if (decoded.exp < Date.now() / 1000) { 
+        return true;
+      }
+      else
+        return false;
+    }
+    catch (err) {
+      return false;
+    }
   }
 
   getToken() {
@@ -32,3 +44,4 @@ class AuthService {
 }
 
 export default new AuthService();
+

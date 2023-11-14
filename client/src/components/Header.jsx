@@ -3,12 +3,12 @@ import 'bulma/css/bulma.min.css';
 
 const Header = () => {
   return (
-    <section class="hero has-text-centered">
-    <div class="hero-body">
-      <p class="title is-1">
+    <section className="hero has-text-centered">
+    <div className="hero-body">
+      <p className="title is-1">
       KEEP IT KANDY
       </p>
-      <p class="subtitle">
+      <p className="subtitle">
         The one stop shop for your candy cravings. 
       </p>
     </div>
