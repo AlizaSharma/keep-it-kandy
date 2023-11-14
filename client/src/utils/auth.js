@@ -1,6 +1,5 @@
 // decoding the token to get the user's information 
-
-const decode = require('jwt-decode');
+import decode from 'jwt-decode';
 
 class AuthService {
   // get user data from JSON web token by decoding it
