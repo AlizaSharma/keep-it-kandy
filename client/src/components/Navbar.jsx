@@ -32,7 +32,7 @@ function Navbar() {
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-info is-light">
+          <a class="button is-info is-light" href='/login'>
             <strong>Sign In</strong>
           </a>
           <Link
