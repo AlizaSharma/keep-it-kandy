@@ -32,6 +32,7 @@ export default function SignIn() {
 
     return (
         <form className="login-form" onSubmit={handleFormSubmit}>
+          <h1><strong>Already a user? Sign in with your username.</strong></h1>
               <div className="field">
                 <p className="control has-icons-left has-icons-right">
                   <input
