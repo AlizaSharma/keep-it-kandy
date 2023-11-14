@@ -12,12 +12,12 @@
   * [License](#license)
   * [Questions](#questions)
 
- ## Usage 
- The Keep It Kandy webpage was deployed using Heroku at the following [URL](https://keepitkandy-131b285227bb.herokuapp.com/). 
+  ## Usage 
+  The Keep It Kandy webpage was deployed using Heroku at the following [URL](https://keepitkandy-131b285227bb.herokuapp.com/). 
 
- See example below of expected outcome:
+  See example below of expected outcome:
 
- ![Keep It Kandy](./client/public/assets/Keepitkandy.png)
+  ![Keep It Kandy](./client/public/assets/Keepitkandy.png)
 
   ## User Story
   As a candy enthusiast, I WANT to purchase the best candy SO THAT I can conveniently satisfy my cravings.
@@ -26,7 +26,7 @@
   * React
   * GraphQL with Node.js & Express.js
   * MongoDB and Mongoose ODM
-  
+
   ## Contributors
 
   Click name for GitHub:
