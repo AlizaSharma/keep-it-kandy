@@ -2,6 +2,12 @@ import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
+import cakebites from '../assets/Cakebites.png';
+import chocolateballs from '../assets/Chocoalteballs.png';
+import donuts from '../assets/donuts.png';
+import gummies from '../assets/gummies.png';
+import gummystrips from '../assets/Gummystrips.png';
+import mnms from '../assets/Mnms.png';
 
 function Shop() {
     return (
@@ -14,7 +20,7 @@ function Shop() {
                 <div class="column is-one-third">
                     <div class="card product-card">
                         <div class="card-image">
-                                <img src="./public/assets/Cakebites.png" alt="Cakebites"/>
+                                <img src={cakebites} alt="Cakebites"/>
                         </div>
                         <div class="card-content has-text-centered">
                             <p class="title is-4 has-text-centered">Cake Bites</p>
@@ -28,7 +34,7 @@ function Shop() {
                 <div class="column is-one-third">
                     <div class="card product-card">
                         <div class="card-image">
-                                <img src="./public/assets/Mnms.png" alt="Chocolate drops"/>
+                                <img src={mnms} alt="Chocolate drops"/>
                         </div>
                         <div class="card-content has-text-centered">
                             <p class="title is-4 has-text-centered">Coated Drops</p>
@@ -42,7 +48,7 @@ function Shop() {
                 <div class="column is-one-third">
                     <div class="card product-card">
                         <div class="card-image">
-                                <img src="./public/assets/donuts.png" alt="Mini donuts"/>
+                                <img src={donuts} alt="Mini donuts"/>
                         </div>
                         <div class="card-content  has-text-centered">
                             <p class="title is-4 has-text-centered">Mini Donuts</p>
@@ -63,7 +69,7 @@ function Shop() {
                     <div class="card product-card">
                         <div class="card-image">
                             <br/>
-                                <img src="./public/assets/gummies.png" alt="gummy bears"/>
+                                <img src={gummies} alt="gummy bears"/>
                         </div>
                         <div class="card-content has-text-centered">
                             <p class="title is-4 has-text-centered">Gummy Bears</p>
@@ -77,7 +83,7 @@ function Shop() {
                 <div class="column is-one-third">
                     <div class="card product-card">
                         <div class="card-image">
-                                <img src="./public/assets/Chocoalteballs.png" alt="Chocolate balls"/>
+                                <img src={chocolateballs} alt="Chocolate balls"/>
                         </div>
                         <div class="card-content has-text-centered">
                             <p class="title is-4 has-text-centered">Chocolate</p>
@@ -91,7 +97,7 @@ function Shop() {
                 <div class="column is-one-third">
                     <div class="card product-card">
                         <div class="card-image">
-                                <img src="./public/assets/Gummystrips.png" alt="Gummy strips"/>
+                                <img src={gummystrips} alt="Gummy strips"/>
                         </div>
                         <div class="card-content has-text-centered">
                             <p class="title is-4 has-text-centered">Sour Gummy Strips</p>
