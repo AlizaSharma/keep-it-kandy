@@ -6,6 +6,7 @@ const connectDB = require('./config/connection');
 const { expressMiddleware } = require('@apollo/server/express4');
 const path = require('path');
 const { typeDefs, resolvers } = require('./schemas');
+const cors = require('cors');
 
 
 const db = require('./config/connection');
@@ -15,6 +16,10 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  cors: {
+    origin: "*",
+    credentials: true
+  }
 });
 
 const startApolloServer = async () => {
@@ -22,7 +27,7 @@ const startApolloServer = async () => {
   
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
-  
+  app.use(cors());
   app.use('/graphql', expressMiddleware(server));
 
   // if we're in production, serve client/dist as static assets

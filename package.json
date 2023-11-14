@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "engines": {
-        "node": "20.7"
+        "node": "18.17.0"
     },
     "main": "server/server.js",
     "scripts": {
@@ -17,5 +17,8 @@
     "license": "ISC",
     "devDependencies": {
         "concurrently": "^5.3.0"
+    },
+    "dependencies": {
+        "jwt-decode": "^4.0.0"
     }
 }

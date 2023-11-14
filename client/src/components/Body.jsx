@@ -5,15 +5,15 @@ import image3 from '../assets/image3.jpg';
 
 const Body = () => {
     return (
-        <section class="section">
-        <div class="container">
+        <section className="section">
+        <div className="container">
           <div id="slider">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
+            <div className="card">
+              <div className="card-image">
+                <figure className="image is-16by9">
                   <img src={image3} alt="" />
-                  <div class="overlay">
-                    <a href="/shop" class="button is-info is-light is-large">Shop Now</a>
+                  <div className="overlay">
+                    <a href="/shop" className="button is-info is-light is-large">Shop Now</a>
                   </div>
                 </figure>
               </div>

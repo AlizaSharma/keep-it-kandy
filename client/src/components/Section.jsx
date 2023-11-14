@@ -5,22 +5,22 @@ import '../App.css';
 const Section = () => {
     return (
         
-        <div class="card has-text-centered">
-        <div class="card-content">
-          <p class="title">
+        <div className="card has-text-centered">
+        <div className="card-content">
+          <p className="title">
             “Mouth-watering, flavorful, delicious. Keep it Kandy has the best candy on the block!”
           </p>
-          <p class="subtitle">
+          <p className="subtitle">
             Candy Enthusiast 
           </p>
         </div>
-        <footer class="card-footer">
-          <p class="card-footer-item">
+        <footer className="card-footer">
+          <p className="card-footer-item">
             <span>
               Share on <a href="#">Twitter</a>
             </span>
           </p>
-          <p class="card-footer-item">
+          <p className="card-footer-item">
             <span>
               Share on <a href="#">Facebook</a>
             </span>
